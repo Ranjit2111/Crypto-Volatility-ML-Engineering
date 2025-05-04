@@ -1,0 +1,46 @@
+{
+  "prediction_date": "2025-05-04",
+  "most_volatile_coin": "dogecoin",
+  "predictions": [
+    {
+      "coin": "dogecoin",
+      "volatility_probability": 0.333475
+    },
+    {
+      "coin": "bitcoin",
+      "volatility_probability": 0.284755
+    },
+    {
+      "coin": "ethereum",
+      "volatility_probability": 0.211004
+    },
+    {
+      "coin": "avalanche-2",
+      "volatility_probability": 0.144235
+    },
+    {
+      "coin": "binancecoin",
+      "volatility_probability": 0.130101
+    },
+    {
+      "coin": "matic-network",
+      "volatility_probability": 0.084135
+    },
+    {
+      "coin": "polkadot",
+      "volatility_probability": 0.068148
+    },
+    {
+      "coin": "solana",
+      "volatility_probability": 0.065046
+    },
+    {
+      "coin": "cardano",
+      "volatility_probability": 0.061055
+    },
+    {
+      "coin": "ripple",
+      "volatility_probability": 0.02883
+    }
+  ]
+}
