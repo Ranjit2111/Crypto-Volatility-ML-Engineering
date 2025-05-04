@@ -10,6 +10,7 @@ __pycache__
 *.pywz
 crypto-volatility-dashboard/
 frontend_development.md
+# Data 
 data/
 plots/
 
