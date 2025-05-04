@@ -9,23 +9,12 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Final
+from config import COINS, ML_DAYS
 
 import requests
 
-COINS: Final[list[str]] = [
-    "bitcoin",
-    "ethereum",
-    "binancecoin",
-    "ripple",
-    "cardano",
-    "dogecoin",
-    "solana",
-    "polkadot",
-    "avalanche-2",
-    "matic-network",
-]
 VS_CURRENCY: Final[str] = "usd"
-DAYS: Final[int] = 90
+DAYS: Final[int] = ML_DAYS 
 MAX_ATTEMPTS: Final[int] = 3
 BACKOFFS: Final[list[int]] = [60, 90, 120]  # seconds
 
