@@ -13,7 +13,7 @@ from typing import List, Optional
 from fastapi.responses import FileResponse
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
-from config import COINS
+from crypto_vol.config import COINS, ML_DAYS 
 
 DATA_DIR = Path("data")
 PLOT_DIR = Path("plots")

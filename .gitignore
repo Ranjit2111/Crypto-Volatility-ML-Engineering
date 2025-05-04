@@ -8,3 +8,8 @@ __pycache__
 *.pyw
 *.pyz
 *.pywz
+crypto-volatility-dashboard/
+frontend_development.md
+data/
+plots/
+
