@@ -1,0 +1,9 @@
+pandas==2.0.0
+numpy==1.24.0
+requests
+scikit-learn==1.2.0
+xgboost   # unused in Phase 1 – required for Phase 2
+ta
+fastapi
+uvicorn
+pytest
