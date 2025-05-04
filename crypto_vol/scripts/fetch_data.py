@@ -9,8 +9,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Final
-from config import COINS, ML_DAYS
-
+from crypto_vol.config import COINS, ML_DAYS
 import requests
 
 VS_CURRENCY: Final[str] = "usd"
