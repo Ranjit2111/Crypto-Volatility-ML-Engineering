@@ -1,10 +1,10 @@
-pandas==2.0.0
-numpy==1.24.0
-requests
-scikit-learn==1.2.0
-xgboost   # unused in Phase 1 – required for Phase 2
-ta
-fastapi
-uvicorn
-pytest
-matplotlib
+pandas==2.2.3
+numpy==2.2.5
+requests==2.32.3
+scikit-learn==1.6.1
+xgboost==3.0.0   # unused in Phase 1 – required for Phase 2
+ta==0.11.0
+fastapi==0.115.12
+uvicorn==0.34.2
+pytest==8.3.5
+matplotlib==3.10.1
