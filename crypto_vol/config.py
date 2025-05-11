@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-# Track as many coins as you want – CoinGecko IDs.
 COINS = [
     "bitcoin", "ethereum", "binancecoin", "ripple",
     "cardano", "dogecoin", "solana", "polkadot",
@@ -9,5 +8,4 @@ COINS = [
     "chainlink", "algorand", "cosmos", "theta-token",
 ]
 
-# Days of history to fetch for ML (not for plots)
-ML_DAYS = 90
+ML_DAYS = 180
