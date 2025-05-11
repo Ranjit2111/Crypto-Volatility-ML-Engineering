@@ -36,7 +36,7 @@ class PredictionResponse(BaseModel):
 def read_root() -> dict[str, str]:
     """Welcome endpoint."""
     return {
-        "message": "Welcome to the Crypto‑Volatility‑Watcher MVP (Phase 1). See /predict for latest prediction."
+        "message": "Welcome to the Crypto‑Volatility‑Watcher MVP (Phase 1). See /predict for latest prediction."
     }
 
 
@@ -64,12 +64,24 @@ def get_prediction() -> PredictionResponse:
 
     with files[0].open() as fp:
         return json.load(fp)
-    
+
 
 @app.get("/coins", tags=["meta"])
 def list_coins() -> list[str]:
     """Return the current coin universe."""
     return COINS
+
+
+@app.get("/plot/feature_importance", tags=["plots"])
+def get_feature_importance_plot() -> FileResponse:
+    """Serve the feature importance pie chart."""
+    f = PLOT_DIR / "feature_importance_pie.png"
+    if not f.exists():
+        raise HTTPException(
+            status_code=404,
+            detail="Feature importance plot not found. Run scripts/generate_plots.py first.",
+        )
+    return FileResponse(f, media_type="image/png")
 
 
 @app.get("/plot/{coin}", tags=["plots"])
