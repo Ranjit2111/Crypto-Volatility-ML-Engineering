@@ -12,14 +12,21 @@ from typing import List, Optional
 
 from fastapi.responses import FileResponse
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from crypto_vol.config import COINS, ML_DAYS 
 
 DATA_DIR = Path("data")
 PLOT_DIR = Path("plots")
 
-
 app = FastAPI(title="Crypto Volatility Watcher", version="0.1.0")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], 
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class PredictionItem(BaseModel):
     coin: str = Field(..., example="bitcoin")
