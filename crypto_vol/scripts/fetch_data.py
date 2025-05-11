@@ -15,7 +15,7 @@ import requests
 VS_CURRENCY: Final[str] = "usd"
 DAYS: Final[int] = ML_DAYS 
 MAX_ATTEMPTS: Final[int] = 3
-BACKOFFS: Final[list[int]] = [60, 90, 120]  # seconds
+BACKOFFS: Final[list[int]] = [60, 90, 120] 
 
 RAW_DIR = Path("data/raw")
 RAW_DIR.mkdir(parents=True, exist_ok=True)
