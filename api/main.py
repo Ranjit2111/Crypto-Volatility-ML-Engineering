@@ -36,7 +36,7 @@ class PredictionResponse(BaseModel):
 def read_root() -> dict[str, str]:
     """Welcome endpoint."""
     return {
-        "message": "Welcome to the Crypto‑Volatility‑Watcher MVP (Phase 1). See /predict for latest prediction."
+        "message": "Welcome to the Crypto‑Volatility‑Watcher. See /predict for latest prediction."
     }
 
 
@@ -54,7 +54,6 @@ def get_prediction() -> PredictionResponse:
         with today_file.open() as fp:
             return json.load(fp)
 
-    # Fallback: most recent prediction file
     files = sorted(DATA_DIR.glob("predictions_*.json"), reverse=True)
     if not files:
         raise HTTPException(
