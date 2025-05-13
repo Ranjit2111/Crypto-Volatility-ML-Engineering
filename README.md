@@ -1,3 +1,5 @@
+Watch this project live at : https://crypto-volatility.vercel.app/
+
 # Crypto Volatility Watcher
 
 Predicts daily crypto volatility using machine learning, featuring a FastAPI backend and data processing pipeline. This project demonstrates an end-to-end MLOps workflow, from data ingestion and feature engineering to model tuning, prediction, and API deployment.
