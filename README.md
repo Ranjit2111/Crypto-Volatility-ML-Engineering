@@ -179,8 +179,8 @@ You can then access the API at `http://localhost:8000`.
 
 ## Deployed Endpoints
 
-* **Backend API URL:** `[YOUR_AWS_EC2_FASTAPI_ENDPOINT_HERE]`
-* **Frontend URL:** `[YOUR_VERCEL_FRONTEND_URL_HERE]`
+* **Backend API URL:** `cryptoapi.duckdns.org`
+* **Frontend URL:** `crypto-volatility.vercel.app`
 
 ## Contributing
 
